@@ -1,0 +1,16 @@
+# Build directories
+build
+tests/build
+
+# macOS
+.DS_Store
+
+# Python (Botan configure.py cache)
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor
+.vscode
+*.swp
+*~
