@@ -146,8 +146,8 @@ std::string token2 = jwe::create()
 | Dependency | Tested version | Notes |
 |---|---|---|
 | C++ compiler | Apple Clang 16 / GCC / MSVC | C++20 required |
-| CMake | ≥ 3.19 | only for the test suite |
-| [Botan](https://botan.randombit.net/) | 3.11.0 | downloaded automatically by `FindBotan.cmake` |
+| CMake | ≥ 3.30 | only for the test suite |
+| [Botan](https://botan.randombit.net/) | 3.12.0 | downloaded automatically by `FindBotan.cmake` |
 | [jsoncons](https://github.com/danielaparker/jsoncons) | 1.7.0 | downloaded automatically by `FindJsoncons.cmake` |
 
 Both dependencies can be supplied as local paths via `Botan_PATH` and `Jsoncons_PATH`
