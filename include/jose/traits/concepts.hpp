@@ -41,6 +41,10 @@ namespace jwt
             T::object_range(v);
             { T::parse(s) } -> std::same_as<typename T::value_type>;
             { T::serialize(v) } -> std::convertible_to<std::string>;
+            { T::elem_key(*T::object_range(v).begin()) } -> std::convertible_to<std::string>;
+            { T::elem_value(*T::object_range(v).begin()) } -> std::convertible_to<typename T::value_type>;
+            { T::elem_is_string(*T::array_range(v).begin()) } -> std::same_as<bool>;
+            { T::elem_as_string(*T::array_range(v).begin()) } -> std::convertible_to<std::string>;
         };
 
     template <typename T>
